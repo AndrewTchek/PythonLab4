@@ -40,16 +40,24 @@ replaced_text = replace_o_with_i(swapped_text)
 print("Текст з заміною 'o' на 'і':")
 print(replaced_text)
 
-# Вивід тексту у зворотньому порядку
+# Вивід тексту у зворотньому порядку_Ліцман
 def reverse_text(text_arr):
     return text_arr[::-1]
 reversed_text = reverse_text(replaced_text)
 print("Текст у зворотньому порядку:")
 print(reversed_text)   
 
-# Вивід кожне друге слово
+# Вивід кожне друге слово_Ліцман
 def every_second_word(text_arr):
     return text_arr[1::2]
 second_words = every_second_word(replaced_text)
 print("Кожне друге слово:")
 print(second_words) 
+# Перевертання букв в кожному слові_Ліцман
+def reverse_letters_in_words(text_arr):
+    for i in range(len(text_arr)):
+        text_arr[i] = text_arr[i][::-1]  
+    return text_arr
+reversed_letters_text = reverse_letters_in_words(replaced_text)
+print("Слова з перевернутими буквами:")
+print(reversed_letters_text)
